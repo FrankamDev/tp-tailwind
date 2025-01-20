@@ -1,3 +1,5 @@
+import NavBar from "./NavBar";
+
 const Header = () => {
   return (
     <div className="">
@@ -7,13 +9,7 @@ const Header = () => {
           <img src="../../public/devinsto.jpg" className="h-[22px]" alt="" />
         </div>
 
-        <ul className="flex mt-2">
-          <li className="mx-2 text-gray-600 font-bold ">Formations</li>
-          <li className="mx-2 font-bold text-gray-600">Blog</li>
-          <li className="mx-2 font-bold text-gray-600">Forum</li>
-          <li className="mx-2 font-bold text-gray-600">S'inscrire</li>
-          <li className="mx-2 font-bold text-gray-600">Se connecter</li>
-        </ul>
+        <NavBar/>
       </div>
       <div className="border-t-2 border-gray-400 w-full my-4"></div>
     </div>
