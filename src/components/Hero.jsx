@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 p-20 min-h-100">
-      <div className=" flex flex-col  text-left justify-start  p-6">
-        <h1 className="text-4xl font-bold mb-4 text-green-400">Devinsto</h1>
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 p-20 min-h-100  ">
+      <div className=" flex flex-col  text-left justify-start   p-6">
+        <h1 className="text-4xl font-bold mb-4 text-center text-green-400">Devinsto</h1>
         <h2 className="text-2xl mb-4">
           Apprenez, Créez, <br />
           Collaborez sans limites.
@@ -21,14 +21,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="md:flex hidden justify-center items-center">
         <img
           src="../../public/Screenshot 2025-01-20 120813.png"
           className="w-1/2"
           alt="logo"
         />
       </div>
-
     </div>
   );
 };
