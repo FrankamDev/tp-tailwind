@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,18 +9,15 @@ const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Fermeture du menu lorsque l'on clique en dehors de la navbar
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setMenuOpen(false); // Ferme le menu si l'on clique en dehors
+        setMenuOpen(false);
       }
     };
 
-    // Ajouter l'événement de clic
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Nettoyage de l'événement lors de la suppression du composant
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -28,15 +26,12 @@ const NavBar = () => {
   return (
     <header className="relative px-2 rounded-sm bg-green-600">
       <nav className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-white font-bold text-xl">
+        <div className="text-white font-bold text-xl"></div>
 
-        </div>
 
-        {/* Bouton burger (affiché sur mobile) */}
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-white">
-            {/* Icône burger ou croix */}
+
             <i
               className={`bi text-2xl transition-all duration-300 ${
                 menuOpen ? "bi-x" : "bi-list"
@@ -45,7 +40,6 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Menu principal (affiché sur grand écran) */}
         <div className="hidden lg:flex space-x-6">
           <a href="#" className="text-white">
             Formation
@@ -73,19 +67,21 @@ const NavBar = () => {
             : "max-h-0 opacity-0 invisible translate-y-10"
         } absolute top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50 z-50 flex items-center justify-center`}
       >
-        <div className="bg-green-600 p-4 rounded-md w-80">
-          <a href="#" className="block text-white py-2">
-            Accueil
-          </a>
-          <a href="#" className="block text-white py-2">
-            À propos
-          </a>
-          <a href="#" className="block text-white py-2">
-            Services
-          </a>
-          <a href="#" className="block text-white py-2">
-            Contact
-          </a>
+        <div className="bg-green-600 p-4 rounded-sm  justify-center items-center flex flex-col">
+          <NavLink to="/" className="block text-white py-2">
+            Formations
+          </NavLink>
+          <NavLink to="/" className="block text-white py-2"></NavLink>
+          <NavLink to="/" className="block text-white py-2">
+            Blog
+          </NavLink>
+          <NavLink to="/" className="block text-white py-2">
+            Forum
+          </NavLink>
+
+          <NavLink to="/" className="block text-white py-2">
+            Se connecter
+          </NavLink>
         </div>
       </div>
     </header>
