@@ -1,3 +1,4 @@
+import FormationCard from "../components/FormationCard";
 import Formations from "../components/Formations";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -8,6 +9,7 @@ const Home = () => {
       <Header />
       <Hero/>
       <Formations/>
+      <FormationCard/>
     </div>
   );
 };
