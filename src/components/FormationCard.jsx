@@ -32,9 +32,7 @@ const FormationCard = () => {
           Vue.js est un framework JavaScript progressif utilisé pour construire
           des interfaces utilisateur et des applications web.
         </p>
-        <p className="bg-red-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi vel ipsam illo, dignissimos sed totam magni iste odit maxime voluptatum maiores provident debitis facere, autem sequi ipsa id! Officia.
-        </p>
+        ``
       </div>
     </div>
   );
