@@ -1,4 +1,3 @@
-
 const FormationCard = () => {
   return (
     <div className="bg-white shadow-lg  gap-2 rounded-lg overflow-hidden md:flex flex items-center flex-col md:flex-wrap justify-center p-10">
@@ -32,6 +31,9 @@ const FormationCard = () => {
         <p className="text-gray-600 font-semibold text-[12px]">
           Vue.js est un framework JavaScript progressif utilisé pour construire
           des interfaces utilisateur et des applications web.
+        </p>
+        <p className="bg-red-200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eligendi vel ipsam illo, dignissimos sed totam magni iste odit maxime voluptatum maiores provident debitis facere, autem sequi ipsa id! Officia.
         </p>
       </div>
     </div>
