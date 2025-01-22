@@ -28,11 +28,11 @@ const FormationCard = () => {
       <div className="card-container md:w-1/2 mb-5 shadow-lg ">
         <img src="../../public/vue-js.jpeg" alt="" />
         <h3 className="font-bold">Les base sur Vue.js</h3>
-        <p className="text-gray-600 font-semibold text-[12px]">
+        <p className="text-gray-600  font-semibold text-[12px]">
           Vue.js est un framework JavaScript progressif utilisé pour construire
           des interfaces utilisateur et des applications web.
         </p>
-        ``
+        
       </div>
     </div>
   );
