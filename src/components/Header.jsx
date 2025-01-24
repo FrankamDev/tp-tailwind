@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 const Header = () => {
   return (
     <div className="">
-      <div className="bg-green-400 py-4"></div>
+      <div className="bg-green-400 py-6"></div>
       <div className=" flex justify-between items-center my-2 px-10 ">
         <div className="bg-red-500 mt-2">
           <img src="../../public/devinsto.jpg" className="h-[22px]" alt="" />
