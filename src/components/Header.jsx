@@ -13,6 +13,7 @@ const Header = () => {
       </div>
       <div className="border-t-2 border-gray-400 w-full my-4"></div>
     </div>
+    
   );
 };
 
